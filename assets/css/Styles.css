@@ -20,7 +20,7 @@ html{
 body{
     font-family: Arial, sans-serif;
     font-size: 2rem;
-    color: var(--color-white);
+    /*color: var(--color-white);*/
     line-height: 1.5;
 }
 
@@ -64,24 +64,54 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.intro-content{
-    position: relative;
-    min-height: 100vh;
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--gap);
+body .full-width{
+    width: 100%;
+    flex: 1 1  100%;
 }
 
-.intro-text-content{
+.intro-content{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content, .intro-img{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2{
     width: 100vh;
     text-align: center;
-    text-shadow: 1px 1px 2px  var(--color-white);
-    color: #dc143c;
+    margin-top: 5rem;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 2px var(--color-white);
 }
 
 .intro-img img{
-    max-width: 80vh;
+    max-width: 90%;
+    height: auto;
+}
+
+.top-content{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.top-content ul li{
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    list-style: circle;
+    position: relative;
 }
 
 .main-content{
@@ -95,7 +125,14 @@ h1 {
     background-size: cover;
     background-position: center center;
     color: var(--color-white);
+}
 
+.white-bg{
+    background-color: var(--color-white);
+}
+
+.section{
+    min-height: 100vh;
 }
 
 .menu{
@@ -137,6 +174,7 @@ h1 {
     font-size: 2rem;
     color: var(--default-color);
     position: relative;
+    color: var(--color-white);
 }
 
 .menu ul li a::after{
