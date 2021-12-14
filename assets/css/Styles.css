@@ -157,6 +157,21 @@ body .full-width{
     justify-content: center;
 }
 
+.shows-content{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.shows-content h2{
+    font-size: 5;
+    padding-bottom: 10rem;
+}
+
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
