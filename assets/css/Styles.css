@@ -106,12 +106,20 @@ body .full-width{
     text-align: center;
 }
 
+.top-content h2{
+    font-size: 5rem;
+    margin: 3rem;
+}
+
+.top-content img{
+    width: 3.8rem;
+}
+
 .top-content ul li{
-    display: block;
-    padding: 1rem;
-    font-size: 1.8rem;
-    list-style: circle;
-    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .main-content{
@@ -133,6 +141,20 @@ body .full-width{
 
 .section{
     min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container p{
+    padding: 0 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
 }
 
 .menu{
