@@ -118,6 +118,17 @@ body .full-width{
     justify-content: center;
 }
 
+.intro-img2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img2 img{
+    max-width: 100%;
+    height: auto;
+}
+
 .intro-text-content h2{
     width: 100vh;
     text-align: center;
@@ -184,9 +195,51 @@ body .full-width{
     background-position: center center;
     color: var(--color-white);
 }
+.second-bg{
+    background-image: url('../img/rainbow-vortex.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--color-white);
+}
 
 .white-bg{
     background-color: var(--color-white);
+}
+
+.support-form{
+    grid-column: span 2;
+}
+
+.support-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.form-group{
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, 
+.form-group  textarea{
+    border: none;
+    background-color: var(--color-white);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
 }
 
 .section{
