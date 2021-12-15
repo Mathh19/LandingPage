@@ -15,12 +15,15 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close-menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
+            <h1 onclick="getElementById('colse-menu').checked=false;"></h1>
             <h1><a href="#home">ShowFest</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('colse-menu').checked=false;">
                     <li><a href="#home">Bands</a></li>
                     <li><a href="#tickets">Tickets</a></li>
                     <li><a href="#shows">Shows</a></li>
@@ -154,13 +157,16 @@
                     <div class="form-group full-width">
                         <button type="submit">Send report</button>
                     </div>
-
-                    
                 </fieldset>
             </div>
         </div>
     </section>
 
+    <footer id="footer" class="footer white-bg">
+        <p><a href="https://github.com/Mathh19" target="_blank">Feito por Math</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">❯</a>
 </body>
 
 </html>
