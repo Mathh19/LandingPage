@@ -383,7 +383,7 @@ body .full-width{
     left: 25%;
 }
 
-@media(max-width: 800px){
+/*@media(max-width: 800px){
     .intro-content{
         grid-template-columns: 1fr;
     }
@@ -438,4 +438,4 @@ body .full-width{
             font-size: 4rem;
         }
     }
-}
+}*/
