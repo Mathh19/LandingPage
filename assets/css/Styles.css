@@ -107,20 +107,25 @@ body .full-width{
 .intro-content{
     position: relative;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: auto;
     gap: var(--gap);
     min-height: 100vh;
 }
 
-.intro-text-content, .intro-img{
+.intro-text-content{
+    font-size: 5rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
 }
 
-.intro-img2{
+.intro-text-content p{
+    font-size: 3rem;
+}
+
+.intro-img{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
@@ -129,8 +134,8 @@ body .full-width{
     height: auto;
 }
 
-.intro-text-content h2{
-    width: 100vh;
+.intro-text-content .title{
+    /*width: 100vh;*/
     font-size: 8rem;
     text-align: center;
     margin-top: 5rem;
@@ -154,8 +159,13 @@ body .full-width{
 }
 
 .top-content h2{
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 3rem;
+}
+
+.top-content .information{
+    font-size: 6rem;
+    color: #ff0000;
 }
 
 .top-content img{
@@ -197,7 +207,7 @@ body .full-width{
     color: var(--color-white);
 }
 .second-bg{
-    background-image: url('../img/rainbow-vortex.svg');
+    background-image: url('../img/endless-constellation.svg');
     background-size: cover;
     background-position: center center;
     color: var(--color-white);
@@ -215,7 +225,7 @@ body .full-width{
     border: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: var(--gap);
 }
 
@@ -243,6 +253,21 @@ body .full-width{
     font-size: 3rem;
 }
 
+.form-group button{
+    border: 0.5rem solid var(--secondary-color);
+    background: none;
+    color: var(--secondary-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
 .section{
     min-height: 100vh;
 }
@@ -268,7 +293,7 @@ body .full-width{
     right: 0;
     width: 100%;
     z-index: 1;
-    background-color: var(--bg-color);
+    background-color: var(--color-black);
     border-bottom: 0.1rem solid var(--light-gray);
 }
 
