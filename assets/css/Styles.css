@@ -95,7 +95,7 @@ table td, table th{
 
 body .full-width{
     width: 100%;
-    flex: 1 1  100%;
+    flex: 1 1 100%;
 }
 
 .responsive-table{
@@ -109,7 +109,7 @@ body .full-width{
     display: grid;
     grid-template-rows: 1fr;
     gap: var(--gap);
-    min-width: 100vh;
+    max-width: 100vh;
 }
 
 .intro-text-content{
@@ -383,7 +383,11 @@ body .full-width{
     left: 25%;
 }
 
-/*@media(max-width: 800px){
+.close-menu{
+    display: none;
+}
+
+@media(max-width: 800px){
     .intro-content{
         grid-template-columns: 1fr;
     }
@@ -412,8 +416,8 @@ body .full-width{
         z-index: 2;
         top: 2rem;
         right: 2rem;
-        background-color: var(--secondary-color);
-        color: var(--color-black);
+        background-color: var(--color-black);
+        color: var(--secondary-color);
         font-size: 3rem;
         line-height: 3rem;
         width: 3rem;
@@ -422,7 +426,7 @@ body .full-width{
         padding: 0.5rem;
         cursor: pointer;
         border-radius: 20%;
-        border: 0.1rem  solid var(--secondary-color);
+        border: 0.1rem solid var(--secondary-color);
     }
 
     .close-menu:checked~.menu{
@@ -433,9 +437,18 @@ body .full-width{
         content: '×';
     }
 
+    .menu-spacing{
+        display: none;
+    }
+
     @media(max-width: 320px){
-        h2{
+        .intro-text-content .title, .top-content h2, h2{
             font-size: 4rem;
         }
+
+        .top-content .information{
+            font-size: 3rem;
+        }
+
     }
-}*/
+}
