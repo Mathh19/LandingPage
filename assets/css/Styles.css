@@ -112,7 +112,7 @@ body .full-width{
     max-width: 100vh;
 }
 
-.intro-text-content{
+.intro-text-content {
     font-size: 5rem;
     display: flex;
     flex-flow: column wrap;
@@ -164,7 +164,7 @@ body .full-width{
 }
 
 .top-content .information{
-    font-size: 6rem;
+    font-size: 5rem;
     color: #ff0000;
 }
 
