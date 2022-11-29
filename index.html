@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Show Fest</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/Styles.css">
 </head>
 
@@ -22,7 +24,7 @@
             <h1 onclick="getElementById('close-menu').checked=false;">
                 <a href="#home">ShowFest</a>
             </h1>
-            
+
             <nav>
                 <ul onclick="getElementById('close-menu').checked=false;">
                     <li><a href="#home">Bands</a></li>
@@ -39,7 +41,7 @@
     <section id="home" class="main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2 class="title">Event Bands</h2>
+                <h2 class="title" translate="no">Event Bands</h2>
             </div>
             <div class="intro-img">
                 <img src="https://global-uploads.webflow.com/5f90aa3d82c604b59c6016d1/6155eb2b856ab5a98e829ff1_LOGOS.png"
@@ -123,11 +125,11 @@
 
     <section id="support" class="second-bg section">
         <div class="main-content intro-content">
-            <div  class="intro-text-content">
+            <div class="intro-text-content">
                 <h2>Ask for support</h2>
                 <p>Make your report by filling in the details below.</p>
             </div>
-            <div class="intro-img">
+            <div class="intro-img support-img">
                 <img src="assets/img/undraw_connecting_teams_re_hno7.svg" alt="Imagem representando o suportedo site">
             </div>
 
@@ -144,7 +146,7 @@
                         <label for="last-name">Last name</label>
                         <input type="text" name="last-name" id="last-name" placeholder="Your last name">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Your E-mail</label>
                         <input type="email" name="email" id="email" placeholder="exemple@gmail.com">
@@ -152,7 +154,8 @@
 
                     <div class="form-group">
                         <label for="report">Message</label>
-                        <textarea name="report" id="report" cols="30" rows="10" placeholder="Enter your problem"></textarea>
+                        <textarea name="report" id="report" cols="30" rows="10"
+                            placeholder="Enter your problem"></textarea>
                     </div>
 
                     <div class="form-group full-width">
@@ -164,7 +167,7 @@
     </section>
 
     <footer id="footer" class="footer white-bg">
-        <p><a href="https://github.com/Mathh19" target="_blank">Feito por Math</a></p>
+        <p><a href="https://github.com/Mathh19" target="_blank">Feito por <span translate="no"> Math</span></a></p>
     </footer>
 
     <a class="back-to-top" href="#">❯</a>
